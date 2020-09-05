@@ -66,7 +66,6 @@ There may be different size of image with different aspect ratio. this can be re
 **Gradients** : it is maximum change in function on point to its neighbouring point. 
 
 
-
 1. Image gradients Vector
 
 2. ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Blue-green-gradient.jpg/300px-Blue-green-gradient.jpg)
