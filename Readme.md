@@ -234,7 +234,6 @@ Some of the Popular activation function
     = 0 ,othrewise
    $$
    
-
 2. Linear Function 
 
 $$
@@ -285,11 +284,9 @@ f(x)=0.01x,x<0\\
 = x,x>=0
 $$
 
-##### 
 
-7. 
 
-7. Parameterised ReLU
+7 . Parameterised ReLU
 
 This is another variant of ReLU that aims to solve the problem of  gradient’s becoming zero for the left half of the axis.
 
@@ -332,7 +329,7 @@ $$
 
     i,e sigmoid is used for binary classification and softmax is used for multi class classification. It return the prob for belonging for a data point to each class.
 
- 
+
 $$
 \sigma(z)_i=\frac{e^{z_i}}{\sum\limits_{k=1}^K e^{z_k}},i=1,...K 
 $$
@@ -350,10 +347,69 @@ However depending upon the properties of the problem we might be able to make a 
 
 
 
+An example of ReLU Operation 
+
+![Image for post](https://miro.medium.com/max/539/1*gcvuKm3nUePXwUOLXfLIMQ.png)
 
 
 
 
-[This]: https://arxiv.org/abs/1803.01164
 
- paper
+## POOLING
+
+It reduces the no of parameter when the image pixel is vary  large. spatial pooling is called the downsampling or Upsampling.
+
+Spatial sampling may be different types
+
+- Max pooling
+- Average pooling
+- Sum pooling
+
+![Image for post](https://miro.medium.com/max/722/1*SmiydxM5lbTjoKWYPiuzWQ.png)
+
+ 																	Max Pooling
+
+
+
+**Fully Connected Layer**
+
+The layer we call as FC layer, we flattened our matrix into vector and  feed it into a fully connected layer like a neural network.
+
+
+
+​                                                 Complete CNN Workflow
+
+<img src="https://miro.medium.com/max/1138/1*4GLv7_4BbKXnpc6BRb0Aew.png" alt="Image for post" style="zoom:150%;" />
+
+
+
+**Summary**
+
+- Provide input image into convolution layer
+- Choose parameters, apply filters with strides, padding if requires. Perform  convolution on the image and apply ReLU activation to the matrix.
+- Perform pooling to reduce dimensionality size
+- Add as many convolutional layers until satisfied
+- Flatten the output and feed into a fully connected layer (FC Layer)
+- Output the class using an activation function (Logistic Regression with cost functions) and classifies images.
+
+
+
+
+
+Some popular object detection model right from begining
+
+
+
+### [AlexNet](https://en.wikipedia.org/wiki/AlexNet)
+
+
+
+Architecture :
+
+![../_images/alexnet.svg](https://d2l.ai/_images/alexnet.svg)
+
+
+
+A RGB image of dimension 224*224 taken
+
+- 96 filter with dimension 11 * 11 applied  
